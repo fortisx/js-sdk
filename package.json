@@ -1,0 +1,41 @@
+{
+  "name": "@fortisx/sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript SDK for the FortisX API. Simple, lightweight, and fully compatible with Node.js and browser environments.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortisx/js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fortisx/js-sdk/issues"
+  },
+  "homepage": "https://github.com/fortisx/js-sdk#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.6.0"
+  }
+}
