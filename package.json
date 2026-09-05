@@ -29,12 +29,15 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
+    "prettier": "3.9.6",
     "tsup": "^8.0.1",
     "typescript": "^5.6.0"
   }
