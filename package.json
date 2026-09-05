@@ -1,6 +1,6 @@
 {
   "name": "@fortisx/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official JavaScript SDK for the FortisX API. Simple, lightweight, and fully compatible with Node.js and browser environments.",
   "license": "MIT",
   "type": "module",
